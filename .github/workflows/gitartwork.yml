@@ -1,9 +1,17 @@
-- name: gitartwork on contribution graph
-  uses: jasineri/gitartwork@v1
-  with:
-    # Username
-    user_name: rafalgajos
-    # Text on contribution graph
-    text: GAJOS
-    # SVG file name (optional)
-    svg_file_name: gajos_artwork.svg
+name: GitArtwork
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  artwork:
+    runs-on: ubuntu-latest
+    steps:
+      - name: gitartwork on contribution graph
+        uses: jasineri/gitartwork@v1
+        with:
+          user_name: rafalgajos
+          text: GAJOS
+          svg_file_name: gajos_artwork.svg
