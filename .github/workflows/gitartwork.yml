@@ -1,0 +1,9 @@
+- name: gitartwork on contribution graph
+  uses: jasineri/gitartwork@v1
+  with:
+    # Username
+    user_name: rafalgajos
+    # Text on contribution graph
+    text: GAJOS
+    # SVG file name (optional)
+    svg_file_name: gajos_artwork.svg
