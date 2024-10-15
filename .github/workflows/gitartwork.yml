@@ -1,17 +1,9 @@
-name: GitArtwork
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
-
-jobs:
-  artwork:
-    runs-on: ubuntu-latest
-    steps:
-      - name: gitartwork on contribution graph
-        uses: jasineri/gitartwork@v1
-        with:
-          user_name: rafalgajos
-          text: GAJOS
-          svg_file_name: gajos_artwork.svg
+            - name: GitArtworkv1
+  # You may pin to the exact commit or the version.
+  # uses: jasineri/gitartwork@4fbbee9f24135fc2896a7593814893c18ead3e16
+  uses: jasineri/gitartwork@v1
+  with:
+    # Username
+    user_name: rafalgajos
+    text: GAJOS
+    svg_file_name: gajos_artwork.svg
