@@ -1,2 +1,13 @@
-- name: gitartwork on contribution graph
-  uses: jasineri/gitartwork@v1
+name: GitArtwork
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  artwork:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate Artwork
+        uses: jasineri/gitartwork@v1
