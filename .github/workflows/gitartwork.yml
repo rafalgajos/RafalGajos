@@ -15,3 +15,9 @@ jobs:
           user_name: rafalgajos
           text: GAJOS
           svg_file_name: gajos_artwork.svg
+
+      - name: Upload artwork as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: gajos_artwork
+          path: gajos_artwork.svg
